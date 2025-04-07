@@ -13,6 +13,7 @@ The script ensures periodic, one-way synchronization between a source folder and
 - Removes files and folders in the replica folder that are no longer present in the source folder.
 - Creates missing files and folders in the replica folder from the source folder.
 - Updates files in the replica folder if they are different from the corresponding files in the source folder.
+  
 All operations are logged in both a log file (when possible) and to the console for traceability and monitoring.
 
 
