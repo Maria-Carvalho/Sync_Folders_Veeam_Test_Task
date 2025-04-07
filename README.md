@@ -10,24 +10,25 @@ This test task consists of implementing a program, in Python or C#, that should 
 
 ## Script Overview
 The script ensures periodic, one-way synchronization between a source folder and a replica folder. It performs the following tasks:
--Removes files and folders in the replica folder that are no longer present in the source folder.
--Creates missing files and folders in the replica folder from the source folder.
--Updates files in the replica folder if they are different from the corresponding files in the source folder.
+- Removes files and folders in the replica folder that are no longer present in the source folder.
+- Creates missing files and folders in the replica folder from the source folder.
+- Updates files in the replica folder if they are different from the corresponding files in the source folder.
 All operations are logged in both a log file (when possible) and to the console for traceability and monitoring.
 
 
 ## How to Run the Script
 1.  **Clone the repository:**
 2. **Run the script with command-line arguments:**
-`-sf` or `--source_folder`: Path to the source folder. (Default: ./source_folder)
-`-rf` or `--replica_folder`: Path to the replica folder. (Default: ./replica_folder)
-`-lf` or `--log_folder`: Path to the log folder. (Default: ./log_folder)
-`-si` or `--sync_interval`: Synchronization interval in seconds. (Default: 10 seconds)
-   **Example:**
-    ```bash
-    python sync_folders.py -sf /home/user/my_source_folder -rf /home/user/my_replica_folder -lf /home/user/my_logs -si 20
-    ```
-    This will synchronize `/home/user/my_source_folder` with `/home/user/my_replica_folder` every `20` seconds and log the actions to `/home/user/my_logs`
+- `-sf` or `--source_folder`: Path to the source folder. (Default: ./source_folder)
+- `-rf` or `--replica_folder`: Path to the replica folder. (Default: ./replica_folder)
+- `-lf` or `--log_folder`: Path to the log folder. (Default: ./log_folder)
+- `-si` or `--sync_interval`: Synchronization interval in seconds. (Default: 10 seconds)
+    
+Example
+```bash
+python sync_folders.py -sf /home/user/my_source_folder -rf /home/user/my_replica_folder -lf /home/user/my_logs -si 20
+```
+This will synchronize `/home/user/my_source_folder` with `/home/user/my_replica_folder` every `20` seconds and log the actions to `/home/user/my_logs`
 
 
 ## Logging
